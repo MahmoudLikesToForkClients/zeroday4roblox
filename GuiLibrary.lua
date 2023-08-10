@@ -249,9 +249,6 @@ if shared.VapeExecuted then
 	searchbarshadow.ScaleType = Enum.ScaleType.Slice
 	searchbarshadow.SliceCenter = Rect.new(10, 10, 118, 118)
 	searchbarshadow.Parent = searchbarmain
-	local searchbarround = Instance.new("UICorner")
-	searchbarround.CornerRadius = UDim.new(0, 5)
-	searchbarround.Parent = searchbarmain
 	local searchbaricon2 = Instance.new("ImageButton")
 	searchbaricon2.Size = UDim2.new(0, 29, 0, 16)
 	searchbaricon2.AutoButtonColor = false
@@ -310,9 +307,6 @@ if shared.VapeExecuted then
 			if v:IsA("Frame") then v.BackgroundTransparency = legitgui.Visible and 0.8 or 1 end
 		end
 	end)
-	local LegitModulesExitButtonround = Instance.new("UICorner")
-	LegitModulesExitButtonround.CornerRadius = UDim.new(0, 16)
-	LegitModulesExitButtonround.Parent = LegitModulesExitButton
 	LegitModulesExitButton.MouseEnter:Connect(function()
 		game:GetService("TweenService"):Create(LegitModulesExitButton, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut), {BackgroundColor3 = Color3.fromRGB(60, 60, 60), ImageColor3 = Color3.fromRGB(255, 255, 255)}):Play()
 	end)
@@ -348,9 +342,6 @@ if shared.VapeExecuted then
 	LegitModulesListGrid.CellSize = UDim2.new(0, 163, 0, 114)
 	LegitModulesListGrid.CellPadding = UDim2.new(0, 6, 0, 6)
 	LegitModulesListGrid.Parent = LegitModulesList
-	local LegitModulesFrameCorner = Instance.new("UICorner")
-	LegitModulesFrameCorner.CornerRadius = UDim.new(0, 4)
-	LegitModulesFrameCorner.Parent = LegitModulesFrame
 	local notificationwindow = Instance.new("Frame")
 	notificationwindow.BackgroundTransparency = 1
 	notificationwindow.Active = false
@@ -367,9 +358,6 @@ if shared.VapeExecuted then
 	hoverbox.TextSize = 14
 	hoverbox.Visible = false
 	hoverbox.Parent = clickgui
-	local hoverround = Instance.new("UICorner")
-	hoverround.CornerRadius = UDim.new(0, 5)
-	hoverround.Parent = hoverbox
 	local hoverbox2 = hoverbox:Clone()
 	hoverbox2.ZIndex = -1
 	hoverbox2.Size = UDim2.new(1, 2, 1, 2)
@@ -498,9 +486,6 @@ if shared.VapeExecuted then
 		touchButton.MouseButton1Up:Connect(function()
 			touchedButton = false
 		end)
-		local touchCorner = Instance.new("UICorner")
-		touchCorner.CornerRadius = UDim.new(0, 1024)
-		touchCorner.Parent = touchButton
 		local touchTextLimit = Instance.new("UITextSizeConstraint")
 		touchTextLimit.MaxTextSize = 16
 		touchTextLimit.Parent = touchButton
@@ -987,9 +972,6 @@ if shared.VapeExecuted then
 				hoverbox3.TextSize = 16
 				hoverbox3.Visible = true
 				hoverbox3.Parent = clickgui
-				local hoverround3 = Instance.new("UICorner")
-				hoverround3.CornerRadius = UDim.new(0, 4)
-				hoverround3.Parent = hoverbox3
 				setclipboard("https://discord.gg/rQwt7wxpSH")
 				task.wait(1)
 				hoverbox3:Remove()
@@ -1005,9 +987,6 @@ if shared.VapeExecuted then
 		settingsexit.Position = UDim2.new(1, -31, 0, 8)
 		settingsexit.BackgroundColor3 = settingsexithovercolor
 		settingsexit.Parent = windowtitle
-		local settingsexitround = Instance.new("UICorner")
-		settingsexitround.CornerRadius = UDim.new(0, 16)
-		settingsexitround.Parent = settingsexit
 		settingsexit.MouseEnter:Connect(function()
 			tweenService:Create(settingsexit, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut), {BackgroundColor3 = Color3.fromRGB(60, 60, 60), ImageColor3 = Color3.fromRGB(255, 255, 255)}):Play()
 		end)
@@ -1061,9 +1040,6 @@ if shared.VapeExecuted then
 		overlaysexit.Position = UDim2.new(1, -32, 0, 9)
 		overlaysexit.BackgroundColor3 = Color3.fromRGB(26, 25, 26)
 		overlaysexit.Parent = overlaystitle
-		local overlaysexitround = Instance.new("UICorner")
-		overlaysexitround.CornerRadius = UDim.new(0, 16)
-		overlaysexitround.Parent = overlaysexit
 		overlaysexit.MouseEnter:Connect(function()
 			tweenService:Create(overlaysexit, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut), {BackgroundColor3 = Color3.fromRGB(60, 60, 60), ImageColor3 = Color3.fromRGB(255, 255, 255)}):Play()
 		end)
@@ -1111,21 +1087,6 @@ if shared.VapeExecuted then
 		divider3.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
 		divider3.BorderSizePixel = 0
 		divider3.Parent = children2
-		local windowcorner = Instance.new("UICorner")
-		windowcorner.CornerRadius = UDim.new(0, 4)
-		windowcorner.Parent = windowtitle
-		local windowcorner2 = Instance.new("UICorner")
-		windowcorner2.CornerRadius = UDim.new(0, 4)
-		windowcorner2.Parent = settingsbox
-		local windowcorner3 = Instance.new("UICorner")
-		windowcorner3.CornerRadius = UDim.new(0, 4)
-		windowcorner3.Parent = settingsbox2
-		local overlayscorner = Instance.new("UICorner")
-		overlayscorner.CornerRadius = UDim.new(0, 4)
-		overlayscorner.Parent = overlaystitle
-		local overlayscorner2 = Instance.new("UICorner")
-		overlayscorner2.CornerRadius = UDim.new(0, 4)
-		overlayscorner2.Parent = overlaysbkg
 		local uilistlayout = Instance.new("UIListLayout")
 		uilistlayout.SortOrder = Enum.SortOrder.LayoutOrder
 		uilistlayout.Parent = children
@@ -1277,12 +1238,6 @@ if shared.VapeExecuted then
 			toggleframe2.BackgroundColor3 = Color3.fromRGB(26, 25, 26)
 			toggleframe2.BorderSizePixel = 0
 			toggleframe2.Parent = toggleframe1
-			local uicorner = Instance.new("UICorner")
-			uicorner.CornerRadius = UDim.new(0, 16)
-			uicorner.Parent = toggleframe1
-			local uicorner2 = Instance.new("UICorner")
-			uicorner2.CornerRadius = UDim.new(0, 16)
-			uicorner2.Parent = toggleframe2
 			local toggleicon = Instance.new("ImageLabel")
 			toggleicon.Size = UDim2.new(0, 16, 0, 16)
 			toggleicon.BackgroundTransparency = 1
@@ -1503,12 +1458,6 @@ if shared.VapeExecuted then
 					toggleframe2.BackgroundColor3 = Color3.fromRGB(26, 25, 26)
 					toggleframe2.BorderSizePixel = 0
 					toggleframe2.Parent = toggleframe1
-					local uicorner = Instance.new("UICorner")
-					uicorner.CornerRadius = UDim.new(0, 16)
-					uicorner.Parent = toggleframe1
-					local uicorner2 = Instance.new("UICorner")
-					uicorner2.CornerRadius = UDim.new(0, 16)
-					uicorner2.Parent = toggleframe2
 			
 					buttonapi["Enabled"] = false
 					buttonapi["Keybind"] = ""
@@ -1748,12 +1697,6 @@ if shared.VapeExecuted then
 					toggleframe1.Name = "ToggleFrame1"
 					toggleframe1.Position = UDim2.new(0, 2, 0, 2)
 					toggleframe1.Parent = toggleframe2
-					local uicorner = Instance.new("UICorner")
-					uicorner.CornerRadius = UDim.new(0, 3)
-					uicorner.Parent = toggleframe1
-					local uicorner2 = Instance.new("UICorner")
-					uicorner2.CornerRadius = UDim.new(0, 3)
-					uicorner2.Parent = toggleframe2
 			
 					toggleframe1.MouseButton1Click:Connect(function() argstable["Function"]() end)
 					toggleframe1.MouseEnter:Connect(function()
@@ -1837,9 +1780,6 @@ if shared.VapeExecuted then
 			bindtext3.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
 			bindtext3.BorderSizePixel = 0
 			bindtext3.Parent = bindtext2
-			local bindround = Instance.new("UICorner")
-			bindround.CornerRadius = UDim.new(0, 6)
-			bindround.Parent = bindbkg
 			bindbkg.MouseButton1Click:Connect(function()
 				if GuiLibrary["KeybindCaptured"] == false then
 					GuiLibrary["KeybindCaptured"] = true
@@ -2024,9 +1964,6 @@ if shared.VapeExecuted then
 			text2.Position = UDim2.new(1, -22, 0, 10)
 			text2.BackgroundColor3 = Color3.fromRGB(5, 133, 104)
 			text2.Parent = frame
-			local uicorner4 = Instance.new("UICorner")
-			uicorner4.CornerRadius = UDim.new(0, 4)
-			uicorner4.Parent = text2
 			local slider1 = Instance.new("TextButton")
 			slider1.AutoButtonColor = false
 			slider1.Text = ""
@@ -2269,12 +2206,6 @@ if shared.VapeExecuted then
 			toggleframe2.BackgroundColor3 = Color3.fromRGB(26, 25, 26)
 			toggleframe2.BorderSizePixel = 0
 			toggleframe2.Parent = toggleframe1
-			local uicorner = Instance.new("UICorner")
-			uicorner.CornerRadius = UDim.new(0, 16)
-			uicorner.Parent = toggleframe1
-			local uicorner2 = Instance.new("UICorner")
-			uicorner2.CornerRadius = UDim.new(0, 16)
-			uicorner2.Parent = toggleframe2
 
 			buttonapi["Enabled"] = false
 			buttonapi["Keybind"] = ""
@@ -2505,9 +2436,6 @@ if shared.VapeExecuted then
 		children2.Position = UDim2.new(0, 0, 0, 41)
 		children2.Visible = false
 		children2.Parent = windowtitle
-		local windowcorner = Instance.new("UICorner")
-		windowcorner.CornerRadius = UDim.new(0, 4)
-		windowcorner.Parent = windowtitle
 		local uilistlayout = Instance.new("UIListLayout")
 		uilistlayout.SortOrder = Enum.SortOrder.LayoutOrder
 		uilistlayout.Parent = children2
@@ -2755,9 +2683,6 @@ if shared.VapeExecuted then
 			framebox.TextSize = 18
 			framebox.PlaceholderColor3 = Color3.fromRGB(180, 180, 180)
 			framebox.Parent = frame
-			local frameboxcorner = Instance.new("UICorner")
-			frameboxcorner.CornerRadius = UDim.new(0, 5)
-			frameboxcorner.Parent = framebox
 			textGuiLibrary["Object"] = frame
 			textGuiLibrary["Value"] = ""
 			textGuiLibrary["SetValue"] = function(val, entered)
@@ -2829,12 +2754,6 @@ if shared.VapeExecuted then
 			thing.ZIndex = 1
 			thing.BackgroundColor3 = Color3.fromRGB(38, 37, 38)
 			thing.Parent = drop1
-			local uicorner = Instance.new("UICorner")
-			uicorner.CornerRadius = UDim.new(0, 4)
-			uicorner.Parent = drop1
-			local uicorner2 = Instance.new("UICorner")
-			uicorner2.CornerRadius = UDim.new(0, 4)
-			uicorner2.Parent = thing
 			local windowtitle = Instance.new("TextButton")
 			windowtitle.Text = ""
 			windowtitle.AutoButtonColor = false
@@ -2887,9 +2806,6 @@ if shared.VapeExecuted then
 			children.Position = UDim2.new(0, 0, 0, 41)
 			children.Visible = true
 			children.Parent = windowtitle
-			local windowcorner = Instance.new("UICorner")
-			windowcorner.CornerRadius = UDim.new(0, 4)
-			windowcorner.Parent = windowtitle
 			local uilistlayout = Instance.new("UIListLayout")
 			uilistlayout.SortOrder = Enum.SortOrder.LayoutOrder
 			uilistlayout.Parent = children
@@ -3008,9 +2924,6 @@ if shared.VapeExecuted then
 						itemframe.BorderSizePixel = 0
 						itemframe.ZIndex = 5
 						itemframe.Parent = scrollframe
-						local itemcorner = Instance.new("UICorner")
-						itemcorner.CornerRadius = UDim.new(0, 6)
-						itemcorner.Parent = itemframe
 						local itemtext = Instance.new("TextLabel")
 						itemtext.BackgroundTransparency = 1
 						itemtext.Size = UDim2.new(0, 157, 0, 33)
@@ -3031,9 +2944,6 @@ if shared.VapeExecuted then
 						friendcircle.BorderSizePixel = 0
 						friendcircle.Position = UDim2.new(0, 10, 0, 13)
 						friendcircle.Parent = itemframe
-						local friendcorner = Instance.new("UICorner")
-						friendcorner.CornerRadius = UDim.new(0, 8)
-						friendcorner.Parent = friendcircle
 						local friendcircle2 = friendcircle:Clone()
 						friendcircle2.Size = UDim2.new(0, 8, 0, 8)
 						friendcircle2.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
@@ -3138,12 +3048,6 @@ if shared.VapeExecuted then
 				buttontexticon.BackgroundTransparency = 1
 				buttontexticon.Visible = false
 				buttontexticon.Parent = targetframe
-				local buttonround1 = Instance.new("UICorner")
-				buttonround1.CornerRadius = UDim.new(0, 5)
-				buttonround1.Parent = buttontext
-				local buttonround2 = Instance.new("UICorner")
-				buttonround2.CornerRadius = UDim.new(0, 5)
-				buttonround2.Parent = buttonbkg
 				buttonapi["Enabled"] = false
 				buttonapi["Default"] = argstable["Default"]
 		
@@ -3253,12 +3157,6 @@ if shared.VapeExecuted then
 			thing.ZIndex = 1
 			thing.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
 			thing.Parent = drop1
-			local uicorner = Instance.new("UICorner")
-			uicorner.CornerRadius = UDim.new(0, 6)
-			uicorner.Parent = drop1
-			local uicorner2 = Instance.new("UICorner")
-			uicorner2.CornerRadius = UDim.new(0, 6)
-			uicorner2.Parent = thing
 			local dropframe = Instance.new("Frame")
 			dropframe.ZIndex = 3
 			dropframe.Parent = drop1
@@ -3268,9 +3166,6 @@ if shared.VapeExecuted then
 			dropframe.BackgroundTransparency = 0
 			dropframe.BackgroundColor3 = Color3.fromRGB(26, 25, 26)
 			dropframe.Visible = false
-			local uicorner3 = Instance.new("UICorner")
-			uicorner3.CornerRadius = UDim.new(0, 6)
-			uicorner3.Parent = dropframe
 			local thing2 = thing:Clone()
 			thing2.BackgroundColor3 = Color3.fromRGB(53, 52, 53)
 			thing2.Parent = dropframe
@@ -3402,9 +3297,6 @@ if shared.VapeExecuted then
 			text2.Position = UDim2.new(1, -22, 0, 9)
 			text2.BackgroundColor3 = Color3.fromHSV(0.44, 1, 1)
 			text2.Parent = frame
-			local uicorner4 = Instance.new("UICorner")
-			uicorner4.CornerRadius = UDim.new(0, 4)
-			uicorner4.Parent = text2
 			local slider1 = Instance.new("TextButton")
 			slider1.AutoButtonColor = false
 			slider1.Text = ""
@@ -3559,12 +3451,6 @@ if shared.VapeExecuted then
 			toggleframe2.BackgroundColor3 = Color3.fromRGB(26, 25, 26)
 			toggleframe2.BorderSizePixel = 0
 			toggleframe2.Parent = toggleframe1
-			local uicorner = Instance.new("UICorner")
-			uicorner.CornerRadius = UDim.new(0, 16)
-			uicorner.Parent = toggleframe1
-			local uicorner2 = Instance.new("UICorner")
-			uicorner2.CornerRadius = UDim.new(0, 16)
-			uicorner2.Parent = toggleframe2
 
 			buttonapi["Enabled"] = false
 			buttonapi["Keybind"] = ""
@@ -3727,9 +3613,6 @@ if shared.VapeExecuted then
 		children.Position = UDim2.new(0, 0, 0, 41)
 		children.Visible = false
 		children.Parent = windowtitle
-		local windowcorner = Instance.new("UICorner")
-		windowcorner.CornerRadius = UDim.new(0, 4)
-		windowcorner.Parent = windowtitle
 		local uilistlayout = Instance.new("UIListLayout")
 		uilistlayout.SortOrder = Enum.SortOrder.LayoutOrder
 		uilistlayout.Parent = children
@@ -3876,9 +3759,6 @@ if shared.VapeExecuted then
 			bindtext3.BackgroundTransparency = 1
 			bindtext3.BorderSizePixel = 0
 			bindtext3.Parent = bindtext2
-			local bindround = Instance.new("UICorner")
-			bindround.CornerRadius = UDim.new(0, 6)
-			bindround.Parent = bindbkg
 			if argstablemain["HoverText"] and type(argstablemain["HoverText"]) == "string" then
 				button.MouseEnter:Connect(function() 
 					hoverbox.Visible = (GuiLibrary["ToggleTooltips"] and hoverbox.TextSize ~= 1)
@@ -4071,9 +3951,6 @@ if shared.VapeExecuted then
 						itemframe.Text = ""
 						itemframe.AutoButtonColor = false
 						itemframe.Parent = scrollframe
-						local itemcorner = Instance.new("UICorner")
-						itemcorner.CornerRadius = UDim.new(0, 6)
-						itemcorner.Parent = itemframe
 						local itemtext = Instance.new("TextLabel")
 						itemtext.BackgroundTransparency = 1
 						itemtext.Size = UDim2.new(0, 193, 0, 33)
@@ -4233,12 +4110,6 @@ if shared.VapeExecuted then
 				thing.ZIndex = 1
 				thing.BackgroundColor3 = Color3.fromRGB(38, 37, 38)
 				thing.Parent = drop1
-				local uicorner = Instance.new("UICorner")
-				uicorner.CornerRadius = UDim.new(0, 4)
-				uicorner.Parent = drop1
-				local uicorner2 = Instance.new("UICorner")
-				uicorner2.CornerRadius = UDim.new(0, 4)
-				uicorner2.Parent = thing
 				local windowtitle = Instance.new("TextButton")
 				windowtitle.Text = ""
 				windowtitle.AutoButtonColor = false
@@ -4296,9 +4167,6 @@ if shared.VapeExecuted then
 				buttonframeholder.Size = UDim2.new(1, 0, 0, 40)
 				buttonframeholder.LayoutOrder = 0
 				buttonframeholder.Parent = children
-				local windowcorner = Instance.new("UICorner")
-				windowcorner.CornerRadius = UDim.new(0, 4)
-				windowcorner.Parent = windowtitle
 				local uilistlayout = Instance.new("UIListLayout")
 				uilistlayout.SortOrder = Enum.SortOrder.LayoutOrder
 				uilistlayout.Parent = children
@@ -4362,12 +4230,6 @@ if shared.VapeExecuted then
 					toggleframe2.BackgroundColor3 = Color3.fromRGB(26, 25, 26)
 					toggleframe2.BorderSizePixel = 0
 					toggleframe2.Parent = toggleframe1
-					local uicorner = Instance.new("UICorner")
-					uicorner.CornerRadius = UDim.new(0, 16)
-					uicorner.Parent = toggleframe1
-					local uicorner2 = Instance.new("UICorner")
-					uicorner2.CornerRadius = UDim.new(0, 16)
-					uicorner2.Parent = toggleframe2
 
 					buttonapi["Enabled"] = false
 					buttonapi["Keybind"] = ""
@@ -4463,12 +4325,6 @@ if shared.VapeExecuted then
 					buttontexticon.BackgroundTransparency = 1
 					buttontexticon.Visible = false
 					buttontexticon.Parent = targetframe
-					local buttonround1 = Instance.new("UICorner")
-					buttonround1.CornerRadius = UDim.new(0, 5)
-					buttonround1.Parent = buttontext
-					local buttonround2 = Instance.new("UICorner")
-					buttonround2.CornerRadius = UDim.new(0, 5)
-					buttonround2.Parent = buttonbkg
 					buttonapi["Enabled"] = false
 					buttonapi["Default"] = argstable["Default"]
 
@@ -4620,12 +4476,6 @@ if shared.VapeExecuted then
 				thing.ZIndex = 1
 				thing.BackgroundColor3 = Color3.fromRGB(38, 37, 38)
 				thing.Parent = drop1
-				local uicorner = Instance.new("UICorner")
-				uicorner.CornerRadius = UDim.new(0, 4)
-				uicorner.Parent = drop1
-				local uicorner2 = Instance.new("UICorner")
-				uicorner2.CornerRadius = UDim.new(0, 4)
-				uicorner2.Parent = thing
 				local windowtitle = Instance.new("TextButton")
 				windowtitle.Text = ""
 				windowtitle.AutoButtonColor = false
@@ -4678,9 +4528,6 @@ if shared.VapeExecuted then
 				children.Position = UDim2.new(0, 0, 0, 41)
 				children.Visible = true
 				children.Parent = windowtitle
-				local windowcorner = Instance.new("UICorner")
-				windowcorner.CornerRadius = UDim.new(0, 4)
-				windowcorner.Parent = windowtitle
 				local uilistlayout = Instance.new("UIListLayout")
 				uilistlayout.SortOrder = Enum.SortOrder.LayoutOrder
 				uilistlayout.Parent = children
@@ -4799,9 +4646,6 @@ if shared.VapeExecuted then
 							itemframe.BorderSizePixel = 0
 							itemframe.ZIndex = 5
 							itemframe.Parent = scrollframe
-							local itemcorner = Instance.new("UICorner")
-							itemcorner.CornerRadius = UDim.new(0, 6)
-							itemcorner.Parent = itemframe
 							local itemtext = Instance.new("TextLabel")
 							itemtext.BackgroundTransparency = 1
 							itemtext.Size = UDim2.new(0, 157, 0, 33)
@@ -4822,9 +4666,6 @@ if shared.VapeExecuted then
 							friendcircle.BorderSizePixel = 0
 							friendcircle.Position = UDim2.new(0, 10, 0, 13)
 							friendcircle.Parent = itemframe
-							local friendcorner = Instance.new("UICorner")
-							friendcorner.CornerRadius = UDim.new(0, 8)
-							friendcorner.Parent = friendcircle
 							local friendcircle2 = friendcircle:Clone()
 							friendcircle2.Size = UDim2.new(0, 8, 0, 8)
 							friendcircle2.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
@@ -4929,12 +4770,6 @@ if shared.VapeExecuted then
 					buttontexticon.BackgroundTransparency = 1
 					buttontexticon.Visible = false
 					buttontexticon.Parent = targetframe
-					local buttonround1 = Instance.new("UICorner")
-					buttonround1.CornerRadius = UDim.new(0, 5)
-					buttonround1.Parent = buttontext
-					local buttonround2 = Instance.new("UICorner")
-					buttonround2.CornerRadius = UDim.new(0, 5)
-					buttonround2.Parent = buttonbkg
 					buttonapi["Enabled"] = false
 					buttonapi["Default"] = argstable["Default"]
 
@@ -5045,12 +4880,6 @@ if shared.VapeExecuted then
 				thing.ZIndex = 1
 				thing.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
 				thing.Parent = drop1
-				local uicorner = Instance.new("UICorner")
-				uicorner.CornerRadius = UDim.new(0, 6)
-				uicorner.Parent = drop1
-				local uicorner2 = Instance.new("UICorner")
-				uicorner2.CornerRadius = UDim.new(0, 6)
-				uicorner2.Parent = thing
 				local dropframe = Instance.new("Frame")
 				dropframe.ZIndex = 7
 				dropframe.Parent = drop1
@@ -5059,9 +4888,6 @@ if shared.VapeExecuted then
 				dropframe.BackgroundTransparency = 0
 				dropframe.BackgroundColor3 = Color3.fromRGB(26, 25, 26)
 				dropframe.Visible = false
-				local uicorner3 = Instance.new("UICorner")
-				uicorner3.CornerRadius = UDim.new(0, 6)
-				uicorner3.Parent = dropframe
 				local thing2 = thing:Clone()
 				thing2.ZIndex = 2
 				thing2.BackgroundColor3 = Color3.fromRGB(53, 52, 53)
@@ -5200,9 +5026,6 @@ if shared.VapeExecuted then
 				text2.Position = UDim2.new(1, -22, 0, 9)
 				text2.BackgroundColor3 = Color3.fromHSV(0.44, 1, 1)
 				text2.Parent = frame
-				local uicorner4 = Instance.new("UICorner")
-				uicorner4.CornerRadius = UDim.new(0, 4)
-				uicorner4.Parent = text2
 				local slider1 = Instance.new("TextButton")
 				slider1.AutoButtonColor = false
 				slider1.Text = ""
@@ -5714,13 +5537,7 @@ if shared.VapeExecuted then
 				toggleframe2.BackgroundColor3 = Color3.fromRGB(26, 25, 26)
 				toggleframe2.BorderSizePixel = 0
 				toggleframe2.Parent = toggleframe1
-				local uicorner = Instance.new("UICorner")
-				uicorner.CornerRadius = UDim.new(0, 16)
-				uicorner.Parent = toggleframe1
-				local uicorner2 = Instance.new("UICorner")
-				uicorner2.CornerRadius = UDim.new(0, 16)
-				uicorner2.Parent = toggleframe2
-
+			
 				buttonapi["Enabled"] = false
 				buttonapi["Keybind"] = ""
 				buttonapi["Default"] = argstable["Default"]
@@ -6003,9 +5820,6 @@ if shared.VapeExecuted then
 		children2.Position = UDim2.new(0, 0, 0, 41)
 		children2.Parent = windowtitle
 		children2.Visible = false
-		local windowcorner = Instance.new("UICorner")
-		windowcorner.CornerRadius = UDim.new(0, 4)
-		windowcorner.Parent = windowtitle
 		local uilistlayout = Instance.new("UIListLayout")
 		uilistlayout.SortOrder = Enum.SortOrder.LayoutOrder
 		uilistlayout.Parent = children
@@ -6086,9 +5900,6 @@ if shared.VapeExecuted then
 			text2.Position = UDim2.new(1, -22, 0, 9)
 			text2.BackgroundColor3 = Color3.fromHSV(0.44, 1, 1)
 			text2.Parent = frame
-			local uicorner4 = Instance.new("UICorner")
-			uicorner4.CornerRadius = UDim.new(0, 4)
-			uicorner4.Parent = text2
 			local slider1 = Instance.new("TextButton")
 			slider1.AutoButtonColor = false
 			slider1.Text = ""
@@ -6288,12 +6099,6 @@ if shared.VapeExecuted then
 			toggleframe2.BackgroundColor3 = Color3.fromRGB(26, 25, 26)
 			toggleframe2.BorderSizePixel = 0
 			toggleframe2.Parent = toggleframe1
-			local uicorner = Instance.new("UICorner")
-			uicorner.CornerRadius = UDim.new(0, 16)
-			uicorner.Parent = toggleframe1
-			local uicorner2 = Instance.new("UICorner")
-			uicorner2.CornerRadius = UDim.new(0, 16)
-			uicorner2.Parent = toggleframe2
 
 			buttonapi["Enabled"] = false
 			buttonapi["Keybind"] = ""
@@ -6433,9 +6238,6 @@ if shared.VapeExecuted then
 					itemframe.BackgroundColor3 = Color3.fromRGB(31, 30, 31)
 					itemframe.BorderSizePixel = 0
 					itemframe.Parent = scrollframe
-					local itemcorner = Instance.new("UICorner")
-					itemcorner.CornerRadius = UDim.new(0, 6)
-					itemcorner.Parent = itemframe
 					local itemtext = Instance.new("TextLabel")
 					itemtext.BackgroundTransparency = 1
 					itemtext.Size = UDim2.new(0, 193, 0, 33)
@@ -6578,9 +6380,6 @@ if shared.VapeExecuted then
 					itemframe.BackgroundColor3 = (hoveredover[i] and Color3.fromRGB(26, 25, 26) or Color3.fromRGB(31, 30, 31))
 					itemframe.BorderSizePixel = 0
 					itemframe.Parent = scrollframe
-					local itemcorner = Instance.new("UICorner")
-					itemcorner.CornerRadius = UDim.new(0, 6)
-					itemcorner.Parent = itemframe
 					local itemtext = Instance.new("TextLabel")
 					itemtext.BackgroundTransparency = 1
 					itemtext.Size = UDim2.new(0, 157, 0, 33)
@@ -6599,9 +6398,6 @@ if shared.VapeExecuted then
 					friendcircle.BorderSizePixel = 0
 					friendcircle.Position = UDim2.new(0, 10, 0, 13)
 					friendcircle.Parent = itemframe
-					local friendcorner = Instance.new("UICorner")
-					friendcorner.CornerRadius = UDim.new(0, 8)
-					friendcorner.Parent = friendcircle
 					local friendcircle2 = friendcircle:Clone()
 					friendcircle2.Size = UDim2.new(0, 8, 0, 8)
 					friendcircle2.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
@@ -6686,9 +6482,6 @@ if shared.VapeExecuted then
 		legitframe.BackgroundColor3 = Color3.fromRGB(31, 30, 31)
 		legitframe.Size = UDim2.new(0, 163, 0, 114)
 		legitframe.Parent = LegitModulesList
-		local legitframecorner = Instance.new("UICorner")
-		legitframecorner.CornerRadius = UDim.new(0, 5)
-		legitframecorner.Parent = legitframe
 		local legitframetext = Instance.new("TextLabel")
 		legitframetext.Font = Enum.Font.Gotham
 		legitframetext.TextSize = 15
@@ -6714,12 +6507,6 @@ if shared.VapeExecuted then
 		toggleframe2.BackgroundColor3 = Color3.fromRGB(26, 25, 26)
 		toggleframe2.BorderSizePixel = 0
 		toggleframe2.Parent = toggleframe1
-		local uicorner = Instance.new("UICorner")
-		uicorner.CornerRadius = UDim.new(0, 16)
-		uicorner.Parent = toggleframe1
-		local uicorner2 = Instance.new("UICorner")
-		uicorner2.CornerRadius = UDim.new(0, 16)
-		uicorner2.Parent = toggleframe2
 		dragGUI(customlegit, true)
 		legitapi.Enabled = false
 
@@ -6825,9 +6612,6 @@ if shared.VapeExecuted then
 		image.Image = downloadVapeAsset("vape/assets/NotificationBackground.png")
 		image.Size = UDim2.new(1, 61, 0, 159)
 		image.Parent = frame
-		local uicorner = Instance.new("UICorner")
-		uicorner.CornerRadius = UDim.new(0, 6)
-		uicorner.Parent = frame
 		local frame2 = Instance.new("ImageLabel")
 		frame2.BackgroundColor3 = Color3.new(1, 1, 1)
 		frame2.Name = "Frame"
